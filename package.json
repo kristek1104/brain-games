@@ -1,6 +1,10 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
+  "type": "module",
+  "bin": {
+	    "brain-games": "bin/brain-games.js"
+  },
   "description": "[![Actions Status](https://github.com/kristek1104/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/kristek1104/frontend-project-44/actions)",
   "main": "index.js",
   "scripts": {
@@ -15,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/kristek1104/frontend-project-44/issues"
   },
-  "homepage": "https://github.com/kristek1104/frontend-project-44#readme"
+  "homepage": "https://github.com/kristek1104/frontend-project-44#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }
