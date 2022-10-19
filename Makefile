@@ -2,10 +2,10 @@ install: #install
 	npm ci
 
 start: #start
-	node bin/brain-games.js
+	node bin/brain-even.js
 
 publish: #publish
 	npm publish --dry-run
 
-make lint: #lint
+lint: #lint
 	npx eslint .
