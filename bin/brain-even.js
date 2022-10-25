@@ -1,5 +1,6 @@
 #!/usr/bin/env node
-import { greeting, getName, userName, evenGame } from '../src/evenGame.js';
-// console.log('Welcome to the Brain Games!');
+import { greeting } from '../src/index.js';
+import { evenGame } from '../src/evenGame.js';
+
 greeting();
 evenGame();
