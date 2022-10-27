@@ -4,11 +4,14 @@
 Maintainability Badge
 <a href="https://codeclimate.com/github/kristek1104/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/80bc082495b05de544aa/maintainability" /></a>
 
-Askinema brain-even:
+Asciinema brain-even:
 https://asciinema.org/a/skEHtg0rtx5hQJfNZi4xbQnp7
 
-Askinema brain-calc:
+Asciinema brain-calc:
 https://asciinema.org/a/iETtyskAMY8lSnO3em75Kwhcp
 
-Askinema brain-gcd:
+Asciinema brain-gcd:
 https://asciinema.org/a/ahyn5XyAxbV3GUP8bvPa03D93
+
+Asciinema brain-progression:
+https://asciinema.org/a/Ez3k6vLfCPFWblNfTKgMI1fg1
