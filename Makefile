@@ -6,9 +6,7 @@ start: #start Even
 	node bin/brain-calc.js
 	node bin/brain-gcd.js
 	node bin/brain-progression.js
-
-startCalc: #start Calc
-	node bin/brain-calc.js
+	node bin/brain-prime.js
 
 publish: #publish
 	npm publish --dry-run
