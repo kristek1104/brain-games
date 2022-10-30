@@ -22,14 +22,14 @@ const primeGame = () => {
         arrHowMuchYes.push(item);
       }
     }
-    //const errorMessage = (userAnswer !== 'yes' || userAnswer !== 'no');
+    // const errorMessage = (userAnswer !== 'yes' || userAnswer !== 'no');
     const check1 = (arrHowMuchYes.length === arrOfNumbers.length && userAnswer === 'yes');
     const check2 = (arrHowMuchYes.length !== arrOfNumbers.length && userAnswer === 'no');
     if (check1 === true || check2 === true) {
       console.log('Correct!');
     } else {
       const opposite = (userAnswer === 'yes' ? 'no' : 'yes');
-	const errorMessage = (userAnswer !== 'yes' || userAnswer !== 'no');
+      const errorMessage = (userAnswer !== 'yes' || userAnswer !== 'no');
       if (userAnswer === errorMessage && userAnswer === check1) {
         const gameOverMessage1 = console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, ${userName}!`);
         return gameOverMessage1;
