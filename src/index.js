@@ -7,4 +7,4 @@ export const userName = getName();
 export const greeting = () => {
   console.log(`Hello, ${userName}!`);
 };
-export const randomNumber = () => Math.ceil(Math.random() * 20);
+export const randomNumber = () => Math.ceil(Math.random() * 20 + 1);
