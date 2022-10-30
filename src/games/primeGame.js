@@ -22,21 +22,28 @@ const primeGame = () => {
         arrHowMuchYes.push(item);
       }
     }
+	  const errorMessage = (userAnswer !== 'yes' || userAnswer !== 'no');
+	  
+	  const check1 = (arrHowMuchYes.length === arrOfNumbers.length && userAnswer === 'yes');
+	  const check2 = (arrHowMuchYes.length !== arrOfNumbers.length && userAnswer === 'no')
 
-    const errorMessage = (userAnswer !== 'yes' || userAnswer !== 'no');
-    if (arrHowMuchYes.length === arrOfNumbers.length && userAnswer === 'yes') {
-      console.log('Correct!');
-    }
-    if ((arrHowMuchYes.length === arrOfNumbers.length) && (userAnswer === 'no' || userAnswer === errorMessage)) {
-      return console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, ${userName}!`);
-    }
-    if (arrHowMuchYes.length !== arrOfNumbers.length && userAnswer === 'no') {
-      console.log('Correct!');
-    }
-    if ((arrHowMuchYes.length !== arrOfNumbers.length) && (userAnswer === 'yes' || userAnswer === errorMessage)) {
-      return console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, ${userName}!`);
+    if (check1 === true || check2 === true) {
+	    console.log('Correct!');
+    } else {
+	    const opposite = (userAnswer === 'yes' ? 'no' : 'yes');
+	  if (userAnswer === check1 && userAnswer === errorMessage) {
+		  const gameOverMessage1 = console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, ${userName}!`);
+		  return gameOverMessage1;
+	  }
+	  if (userAnswer === check2 && userAnswer === errorMessage) {
+		  const gameOverMessage2 = console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, ${userName}!`);
+		  return gameOverMessage2;
+	  } else {
+		  const gameOverMessage = console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${opposite}'.\nLet's try again, ${userName}!`);
+		  return gameOverMessage;
+	  }
     }
   }
-  return console.log(`Congranulations, ${userName}!`);
+  return console.log(`Congratulations, ${userName}!`);
 };
 export default primeGame;
