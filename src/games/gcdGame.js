@@ -21,25 +21,14 @@ const gcdGame = () => {
     for (let b = number2; b >= 1; b -= 1) {
       arrOfNumber2.push(b);
     }
-
-    const arrOfNumberEnd1 = [];
-    for (const item of arrOfNumber1) {
-      if (number1 % item === 0) {
-        arrOfNumberEnd1.push(item);
-      }
-    }
-    const arrOfNumberEnd2 = [];
-    for (const item0 of arrOfNumber2) {
-      if (number2 % item0 === 0) {
-        arrOfNumberEnd2.push(item0);
-      }
-    }
+    const arrOfNumberEnd1 = arrOfNumber1.filter((number) => number1 % number === 0);
+    const arrOfNumberEnd2 = arrOfNumber2.filter((num) => number2 % num === 0);
 
     const common = [];
-    for (const item1 of arrOfNumberEnd1) {
-      for (const item2 of arrOfNumberEnd2) {
-        if (item1 === item2) {
-          common.push(item1);
+    for (let g = 0; g < arrOfNumberEnd1.length; g += 1) {
+      for (let j = 0; j < arrOfNumberEnd2.length; j += 1) {
+        if (arrOfNumberEnd1[g] === arrOfNumberEnd2[j]) {
+          common.push(arrOfNumberEnd1[g]);
         }
       }
     }
