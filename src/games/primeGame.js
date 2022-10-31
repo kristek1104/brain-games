@@ -17,12 +17,11 @@ const primeGame = () => {
     }
 
     const arrHowMuchYes = [];
-    for (const item of arrOfNumbers) {
-      if (number % item !== 0) {
-        arrHowMuchYes.push(item);
+    for (let j = 0; j < arrOfNumbers.length; j += 1) {
+      if (number % arrOfNumbers[j] !== 0) {
+        arrHowMuchYes.push(arrOfNumbers[j]);
       }
     }
-    // const errorMessage = (userAnswer !== 'yes' || userAnswer !== 'no');
     const check1 = (arrHowMuchYes.length === arrOfNumbers.length && userAnswer === 'yes');
     const check2 = (arrHowMuchYes.length !== arrOfNumbers.length && userAnswer === 'no');
     if (check1 === true || check2 === true) {
