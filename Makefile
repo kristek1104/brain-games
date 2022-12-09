@@ -13,3 +13,6 @@ publish: #publish
 
 lint: #lint
 	npx eslint .
+
+tests: #tests
+	node tests/evenGame.test.js
