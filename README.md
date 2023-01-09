@@ -1,3 +1,5 @@
+## Brain-games is set of five games: even(brain-even), calculator(brain-calc), greatest common divisor(brain-gcd), progression(brain-progression), prime(brain-prime).
+
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/kristek1104/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/kristek1104/frontend-project-44/actions)
 
